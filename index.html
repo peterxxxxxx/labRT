@@ -1,20 +1,101 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon"  href="/icon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <link href="CSS/normalize.css" rel="stylesheet">
+    <link href="IMG/icon.png" rel="shortcut icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <title>Vite + React</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+    <link href="CSS/styles.css" rel="stylesheet">
+	
+    <title>My Photo Tech</title>
+</head>
+<body>
+    <header class="header">
+        <div class="sombra">
+            <div class="contenedor">
+                <div class="barra">
+                    <a class="logo" href="index.html">
+                        <h1 class="logo__nombre no-margin centrar-texto">My <span class="logo__negrita">PhotoBlog</span></h1>
+                    </a>
+                    <nav class="navegacion">
+                        <a href="eventos.html" class="navegacion__enlace">Eventos</a>
+                        <a href="paquetes.html" class="navegacion__enlace">Paquetes</a>
+                        <a href="trabajos.html" class="navegacion__enlace">Trabajos</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="header__texto">
+                <h2 class="no-margin">Blog fotografia</h2>
+                <p class="no-margin"> Informacion relevante del mundo de la fotografia digital</p>
+            </div>
+        </div>
+    </header>
+    <div class="contenedor contenido-principal">
+        <main class="blog">
+            <h3 class="centrar-texto">Blog</h3>
+            <article class="entrada">
+                <div>
+                    <img src="IMG/desktop.jpg" alt="imagen con un escritorio">
+                </div>
+                <div class="entrada_contenido">
+                    <h4>El mundo de la fotografia digital</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dolore, repellendus impedit possimus earum similique, non nemo ullam fugiat nam labore quas velit maiores id iure, dolorum voluptates asperiores illo?</p>
+                    <a href="entrada1.html" class="boton boton__primario">Leer más</a>
+                </div>
+            </article>
+            <article class="entrada">
+                <div>
+                    <img src="IMG/book.jpg" alt="imagen con un escritorio">
+                </div>
+                <div class="entrada_contenido">
+                    <h4>Como seria el mundo sin fotografia?</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dolore, repellendus impedit possimus earum similique, non nemo ullam fugiat nam labore quas velit maiores id iure, dolorum voluptates asperiores illo?</p>
+                    <a href="entrada1.html" class="boton boton__primario">Leer más</a>
+                </div>
+            </article>
+            <article class="entrada"></article>
+        </main>
+        <aside class="sidebar">
+            <h3>Paquetes fotograficos</h3>
+            <ul class="paquetes no-pading">
+                <li class="paquetes__titulo">
+                    <h4 class="no-margin">Paquete premium de fotografia</h4>
+                    <p class="paquetes__titulo__etiqueta">Precio: <span class="paquetes__titulo__etiqueta__info">$100,000,000.00</span></p>
+                    <p class="paquetes__titulo__etiqueta">Fotos: <span class="paquetes__titulo__etiqueta__info">100 pz.</span></p>
+                    <a class="boton boton__secundario" href="paquete1.html"> Ver paquete</a>
+                </li>
+
+                <li class="paquetes__titulo">
+                    <h4 class="no-margin">Paquete básico de fotografia</h4>
+                    <p class="paquetes__titulo__etiqueta">Precio: <span class="paquetes__titulo__etiqueta__info">$500,000.00</span></p>
+                    <p class="paquetes__titulo__etiqueta">Fotos: <span class="paquetes__titulo__etiqueta__info">50 pz.</span></p>
+                    <a class="boton boton__secundario" href="paquete1.html"> Ver paquete</a>
+                </li>
+
+            </ul>
+        </aside>
+    </div>
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">My <span class="logo__negrita">PhotoBlog</span></h1>
+                </a>
+                <nav class="navegacion__secundaria">
+                    <a href="eventos.html" class="navegacion__secundaria__enlace">Eventos</a>
+                    <a href="paquetes.html" class="navegacion__secundaria__enlace">Paquetes</a>
+                    <a href="trabajos.html" class="navegacion__secundaria__enlace">Trabajos</a>
+                    <a href="contacto.html" class="navegacion__secundaria__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
